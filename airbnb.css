@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,700');
+
+body {
+margin: 0;
+font-family: "Roboto";
+font-weight: 400;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+input, select, textarea {
+font-family: "Roboto";
+font-weight: 400;
+}
+
+strong, b, h1, h2 {
+font-weight: 700;
+}
+
+header {
+height: 600px;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+video {
+position: absolute; /* absolute par rapport au parent header */
+top: 0;
+left: 0;
+width: 100%;
+z-index: -1;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav img {
+width: 100px;
+margin-top: 15px;
+margin-left: 15px;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 470px;
+height: 60px;
+margin: 0;
+padding: 0; /* toujours sur le ul */
+}
+
+nav li {
+list-style-type: none;
+}
+
+nav li a {
+color: white;
+text-decoration: none;
+}
+
+nav li:first-child a {
+border: 2px solid white;
+padding: 7px 15px;
+}
+
+nav li:first-child a:hover {
+background-color: rgba(0,0,0,0.35);
+}
+
+#slogan {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1 {
+margin: 0;
+font-size: 3.8em;
+text-transform: uppercase;
+}
+
+h1 + p {
+margin-top: 5px;
+font-weight: 700;
+}
+
+#slogan a {
+text-decoration: none;
+color: white;
+font-weight: 700;
+background-color: rgba(255,255,255,0.35);
+padding: 10px 25px;
+}
+
+#slogan a:hover {
+background-color: rgba(0,0,0,0.35);
+}
+
+#recherche {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+background-color: rgba(0,0,0,0.5);	
+}
+
+#search {
+width: 835px;
+height: 45px;
+padding-left: 10px;
+}
+
+#recherche input[type="submit"] {
+width: 140px;
+height: 45px;
+color: white;
+font-weight: 700;
+background-color: #FF5A5F;
+border: none;
+}
+
+#recherche input[type="submit"]:hover {
+cursor: pointer;
+}
+
+main {
+background-color: #EDEFED;
+flex: 1;
+padding-top: 40px; /* fusion ? */
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h2{
+    margin: 0;
+    font-size: 1.8em;
+    color: #565A5C;
+}
+
+h2 + p{
+    color: #565A5C;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section a{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+section a:first-child{
+    background: url("assets/lille.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section a:nth-child(2){
+    background: url("assets/bruxelles.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section a:last-child{
+    background: url("assets/londres.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section + p > a{
+    width: 300px;
+    display: block;
+    color: #565A5C;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 10px 0;
+
+}
+
+/* fusion des marges */
+
+footer {
+background-color: black;
+color: white;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
